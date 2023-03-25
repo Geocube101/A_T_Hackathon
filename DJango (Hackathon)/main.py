@@ -1,11 +1,11 @@
 import os
 import signal
 import json
-import sys
-import io
 import requests
 import base64
+import sys
 
+sys.path.append('../Custom Methods VI')
 import Connection
 
 from flask import Flask, send_file, request, render_template, redirect, Response
