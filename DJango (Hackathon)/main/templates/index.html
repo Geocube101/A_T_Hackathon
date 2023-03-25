@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en_us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mocko</title>
+    <link href="{{ url_for('static', filename='common.css') }}" rel="stylesheet" type="text/css" />
+    <!--<link href="{{ url_for('static', filename='index/index.css') }}" rel="stylesheet" type="text/css" />-->
+    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">-->
+  </head>
+  <body>
+        <button onclick="window.location.href = '/questionnaire'">Questionnaire</button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" ></script>
+		<script src="{{ url_for('static', filename='common.js') }}"></script>
+		<!--<script src="{{ url_for('static', filename='index/index.js') }}"></script>-->
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+	"pack": {
+		"pack_format": 9,
+		"description": {
+			"text": "Resources for ",
+			"color": "gray",
+			"extra": [
+				{
+					"text": "MC Tardis",
+					"color": "blue",
+					"bold": true
+				},
+				{
+					"text": " by ",
+					"color": "gray",
+					"bold": false
+				},
+				{
+					"text": "Iota",
+					"color": "aqua",
+					"bold": true
+				},
+				{
+					"text": "Sphere",
+					"color": "gray",
+					"bold": false
+				}
+			]
+		}
+	}
+}

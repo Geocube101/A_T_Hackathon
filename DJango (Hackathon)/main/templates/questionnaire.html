@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en_us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mocko | Questionnaire</title>
+    <link href="{{ url_for('static', filename='common.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='questionnaire/questionnaire.css') }}" rel="stylesheet" type="text/css" />
+    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">-->
+  </head>
+  <body onload="question_box_init()">
+		<div id="question_box">
+            <nav id="question_box_title">
+                <h1 id="title_fade_0">Choose your Intended Field</h1>
+                <h1 id="title_fade_1" style="display: none"></h1>
+                <input id="search_bar" type="text" placeholder="Search Tech Fields" oninput="on_search_input_change(this)" onchange="on_search_input_change(this)">
+                <img src="{{ url_for('static', filename='images/search.png') }}" title="Go!" id="search_button"  alt="Go!"/>
+            </nav>
+            <div id="content_box">
+                <div id="discipline_box" style="display: none">
+
+                </div>
+                <div id="questionnaire">
+                    <h2>You will be asked 15 random questions from our list of interview questions for this company</h2>
+                    <div>
+                        <span id="question"></span>
+                        <textarea>
+
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" ></script>
+		<script src="{{ url_for('static', filename='common.js') }}"></script>
+		<script src="{{ url_for('static', filename='questionnaire/questionnaire.js') }}"></script>
+  </body>
+</html>
